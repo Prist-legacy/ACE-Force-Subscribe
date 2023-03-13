@@ -8,7 +8,7 @@ class Config():
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "ufmmatches")
 
   # PostgresSQL DB URL (Use ElephantSQL)
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
+  DATABASE_URL = os.environ.get("DATABASE_URL", "Pb1LF1h0ol1RlzNY6WuAVp_-p7eKbN9z@mouse.db.elephantsql.com")
 
   # API & HASH (Use my.telegram.org)
   APP_ID = os.environ.get("APP_ID", 20818634)
