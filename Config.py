@@ -5,7 +5,7 @@ class Config():
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "5853392984:AAE6C7DhVtxGAINDFo5PDjMOBSLqhRKm61U")
 
   # Bot Updates Channel Username (without @)
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "ufmmatches")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "pristbank")
 
   # PostgresSQL DB URL (Use ElephantSQL)
   DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://kstmkuef:Pb1LF1h0ol1RlzNY6WuAVp_-p7eKbN9z@mouse.db.elephantsql.com/kstmkuef")
