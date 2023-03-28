@@ -8,7 +8,7 @@ class Config():
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "pristbank")
 
   # PostgresSQL DB URL (Use ElephantSQL)
-  DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://kstmkuef:Pb1LF1h0ol1RlzNY6WuAVp_-p7eKbN9z@mouse.db.elephantsql.com/kstmkuef")
+  DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://prist:PgWERBWTNck58YqEr3cc@containers-us-west-82.railway.app")
 
   # API & HASH (Use my.telegram.org)
   APP_ID = os.environ.get("APP_ID", 20818634)
