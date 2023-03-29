@@ -17,7 +17,7 @@ async def _start(client, message):
             if user.status == "kicked":
                await client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ACE_OffTopic).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [SUPPORT TEAM](https://t.me/talktotegs).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -25,7 +25,7 @@ async def _start(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join My Main Channel to use this Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -56,14 +56,14 @@ async def _start(client, message):
             return
     await client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
-	reply_markup=InlineKeyboardMarkup(
+	reply_markup=ReplyKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                    KeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                    KeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                    KeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                 ]
             ]
         ),
