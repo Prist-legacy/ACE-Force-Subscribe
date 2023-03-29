@@ -42,11 +42,11 @@ async def _start(client, message):
 	        reply_markup=ReplyKeyboardMarkup(
                     [
                         [
-                           KeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                           KeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                           ReplyKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                           ReplyKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                       ],
                      [
-                           KeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                           ReplyKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                      ]
                  ]
              ),
@@ -59,11 +59,11 @@ async def _start(client, message):
 	reply_markup=ReplyKeyboardMarkup(
             [
                 [
-                    KeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                    KeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                    ReplyKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                    ReplyKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                 ],
                 [
-                    KeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                    ReplyKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                 ]
             ]
         ),
