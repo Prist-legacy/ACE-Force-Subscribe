@@ -39,14 +39,14 @@ async def _start(client, message):
         except Exception:
             await client.send_message(message.chat.id,
                 text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
-	        reply_markup=ReplyKeyboardMarkup(
+	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           ReplyKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                           ReplyKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                           InlineKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                       ],
                      [
-                           ReplyKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                           InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                      ]
                  ]
              ),
@@ -56,14 +56,14 @@ async def _start(client, message):
             return
     await client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
-	reply_markup=ReplyKeyboardMarkup(
+	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    ReplyKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                    ReplyKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                 ],
                 [
-                    ReplyKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                 ]
             ]
         ),
