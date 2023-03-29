@@ -70,6 +70,31 @@ async def _start(client, message):
         parse_mode="markdown",
         reply_to_message_id=message.message_id
         )
+@Client.on_message(filters.incoming & filters.command(['main_menu']) & filters.private)
+
+async def _nain_menu(client, message):
+
+    await client.send_message(message.chat.id,
+
+        text=tr.SC_MSG.format(message.from_user.first_name, message.from_user.id),
+
+        reply_markup=ReplyKeyboardMarkup(
+
+            [
+
+                ["VIP GAMES"],
+
+                ["MY ACCOUNT", "FREE TIPS"],
+
+                ["MY ORDERS", "SUPPORT"]
+
+            ]
+
+        ),
+
+        resize_keyboard=True
+
+        )
 
 
 @Client.on_message(filters.incoming & filters.command(['source_code']) & filters.private)
