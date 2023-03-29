@@ -39,14 +39,14 @@ async def _start(client, message):
         except Exception:
             await client.send_message(message.chat.id,
                 text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
-	        reply_markup=InlineKeyboardMarkup(
+	        reply_markup=ReplyKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
+                           KeyboardButton("Join Updates Channel", url="https://t.me/ACE_ML"),
+                           KeyboardButton("Support Group", url="https://t.me/ACE_OffTopic")
                       ],
                      [
-                           InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
+                           KeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/FlashSpeedster1")
                      ]
                  ]
              ),
